@@ -3,7 +3,7 @@
 
 /* ensure mongo uri */
 process.env.MONGODB_URI =
-  (process.env.MONGODB_URI || 'mongodb://localhost/emis-assessment');
+  (process.env.MONGODB_URI || 'mongodb://localhost/emis-questionnaire');
 
 
 /* dependencies */

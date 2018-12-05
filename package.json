@@ -1,7 +1,7 @@
 {
-  "name": "@codetanzania/emis-assessment",
+  "name": "@codetanzania/emis-questionnaire",
   "version": "1.0.0",
-  "description": "Collective tools for performing assessment prior, during and after emergency(or disaster) event.",
+  "description": "A representation of indicators, questions and questionnaires used to assess need and situation of an emergency(or disaster) event.",
   "main": "index.js",
   "scripts": {
     "test": "grunt test",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeTanzania/emis-assessment.git"
+    "url": "https://github.com/CodeTanzania/emis-questionnaire.git"
   },
   "keywords": [
     "codetanzania",
@@ -24,10 +24,7 @@
     "rapid",
     "assessment",
     "questionnaire",
-    "question",
-    "observation",
-    "response",
-    "respondent"
+    "question"
   ],
   "contributors": [
     {
@@ -38,20 +35,20 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CodeTanzania/emis-assessment/issues",
+    "url": "https://github.com/CodeTanzania/emis-questionnaire/issues",
     "email": "lallyelias87@gmail.com"
   },
-  "homepage": "https://github.com/CodeTanzania/emis-assessment",
+  "homepage": "https://github.com/CodeTanzania/emis-questionnaire",
   "sandbox": {
-    "url": "https://emis-assessment.herokuapp.com",
-    "apiDoc": "https://codetanzania.github.io/emis-assessment/",
+    "url": "https://emis-questionnaire.herokuapp.com",
+    "apiDoc": "https://codetanzania.github.io/emis-questionnaire/",
     "client_id": "",
     "client_secret": "",
     "urls": [
       {
         "resource": "Indicator",
-        "schema": "https://emis-assessment.herokuapp.com/v1/indicators/schema",
-        "link": "https://emis-assessment.herokuapp.com/v1/indicators",
+        "schema": "https://emis-questionnaire.herokuapp.com/v1/indicators/schema",
+        "link": "https://emis-questionnaire.herokuapp.com/v1/indicators",
         "scopes": [
           "indicator:*"
         ],
@@ -64,10 +61,24 @@
       },
       {
         "resource": "Question",
-        "schema": "https://emis-assessment.herokuapp.com/v1/questions/schema",
-        "link": "https://emis-assessment.herokuapp.com/v1/questions",
+        "schema": "https://emis-questionnaire.herokuapp.com/v1/questions/schema",
+        "link": "https://emis-questionnaire.herokuapp.com/v1/questions",
         "scopes": [
           "question:*"
+        ],
+        "methods": [
+          "get",
+          "post",
+          "put",
+          "patch"
+        ]
+      },
+      {
+        "resource": "Questionnaire",
+        "schema": "https://emis-questionnaire.herokuapp.com/v1/questionnaires/schema",
+        "link": "https://emis-questionnaire.herokuapp.com/v1/questionnaires",
+        "scopes": [
+          "questionnaire:*"
         ],
         "methods": [
           "get",

@@ -1,14 +1,14 @@
-# emis-assessment
+# emis-questionnaire
 
-[![Build Status](https://travis-ci.org/CodeTanzania/emis-assessment.svg?branch=develop)](https://travis-ci.org/CodeTanzania/emis-assessment)
-[![Dependencies Status](https://david-dm.org/CodeTanzania/emis-assessment/status.svg?style=flat-square)](https://david-dm.org/CodeTanzania/emis-assessment)
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/CodeTanzania/emis-assessment/tree/develop)
+[![Build Status](https://travis-ci.org/CodeTanzania/emis-questionnaire.svg?branch=develop)](https://travis-ci.org/CodeTanzania/emis-questionnaire)
+[![Dependencies Status](https://david-dm.org/CodeTanzania/emis-questionnaire/status.svg?style=flat-square)](https://david-dm.org/CodeTanzania/emis-questionnaire)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/CodeTanzania/emis-questionnaire/tree/develop)
 
-Collective tools for performing assessment prior, during and after emergency(or disaster) event. 
+A representation of indicators, questions and questionnaires used to assess need and situation of an emergency(or disaster) event. 
 
 ## Domain Model
 
-![EMIS Rapid Assessment Domain Model](https://raw.githubusercontent.com/CodeTanzania/emis-assessment/develop/specifications/assessment.model.png)
+![EMIS Questionnaire Domain Model](https://raw.githubusercontent.com/CodeTanzania/emis-questionnaire/develop/specifications/questionnaire.model.png)
 
 ## Requirements
 
@@ -20,13 +20,13 @@ Collective tools for performing assessment prior, during and after emergency(or 
 ## Installation
 
 ```sh
-npm install @codetanzania/emis-assessment --save
+npm install @codetanzania/emis-questionnaire --save
 ```
 
 ## Usage
 
 ```js
-const { app } = require('@codetanzania/emis-assessment');
+const { app } = require('@codetanzania/emis-questionnaire');
 app.start((error) => { ... });
 ```
 
