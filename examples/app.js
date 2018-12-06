@@ -14,6 +14,7 @@ const mongoose = require('mongoose');
 const {
   Indicator,
   Question,
+  Questionnaire,
   apiVersion,
   info,
   app
@@ -25,6 +26,11 @@ mongoose.connect(process.env.MONGODB_URI);
 
 //boot
 async.waterfall([
+  function clearQuestionnaires(next) {
+    Questionnaire.deleteMany(function ( /*error, results*/ ) {
+      next();
+    });
+  },
 
   function clearQuestions(next) {
     Question.deleteMany(function ( /*error, results*/ ) {
@@ -49,7 +55,13 @@ async.waterfall([
       questions[index].indicator = indicators[index];
     });
     Question.seed(questions, next);
-  }
+  },
+
+  function seedQuestionnaires(questions, next) {
+    const questionnaire = Questionnaire.fake();
+    questionnaire.questions = [...questions];
+    Questionnaire.seed(questionnaire, next);
+  },
 
 ], (error, results) => {
 

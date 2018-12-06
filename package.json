@@ -91,32 +91,41 @@
   },
   "devDependencies": {
     "@benmaruchu/faker": "^4.2.1",
+    "@codetanzania/majifix-common": "^0.11.1",
+    "@lykmapipo/env": "^0.3.2",
+    "@lykmapipo/express-common": "^0.9.3",
+    "async": "^2.6.1",
     "chai": "^4.2.0",
+    "express": "^4.16.4",
     "grunt": "^1.0.3",
     "grunt-apidoc": "^0.11.0",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-mocha-test": "^0.13.3",
     "jshint-stylish": "^2.2.1",
+    "lodash": "^4.17.11",
     "mocha": "^5.2.0",
-    "mongoose": "^5.3.14",
+    "mongoose": "^5.3.15",
+    "mongoose-locale-schema": "^0.2.1",
+    "mongoose-rest-actions": "^0.21.0",
+    "mongoose-schema-jsonschema": "^1.2.1",
     "sinon": "^7.1.1",
     "sinon-chai": "^3.3.0",
     "sinon-mongoose": "^2.2.1",
     "superagent": "^4.0.0",
     "supertest": "^3.3.0"
   },
-  "dependencies": {
-    "@codetanzania/majifix-common": "^0.11.1",
+  "peerDependencies": {
     "@lykmapipo/env": "^0.3.2",
     "@lykmapipo/express-common": "^0.9.3",
     "async": "^2.6.1",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
-    "moment": "^2.22.2",
     "mongoose-locale-schema": "^0.2.1",
     "mongoose-rest-actions": "^0.21.0",
-    "mongoose-schema-jsonschema": "^1.2.1",
+    "mongoose-schema-jsonschema": "^1.2.1"
+  },
+  "dependencies": {
     "randomcolor": "^0.5.3"
   },
   "engines": {
