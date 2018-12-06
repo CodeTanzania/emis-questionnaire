@@ -1,0 +1,33 @@
+{
+  "name": "emis-questionnaire",
+  "description": "A representation of indicators, questions and questionnaires used to assess need and situation of an emergency(or disaster) event.",
+  "repository": "https://github.com/CodeTanzania/emis-questionnaire.git",
+  "keywords": [
+    "codetanzania",
+    "emis",
+    "emis-module",
+    "disaster",
+    "hazard",
+    "risk",
+    "emergency",
+    "incident",
+    "rapid",
+    "assessment",
+    "questionnaire",
+    "question"
+  ],
+  "addons": [
+    "mongolab"
+  ],
+  "env":
+  {
+    "NPM_CONFIG_PRODUCTION":
+    {
+      "value": "false"
+    },
+    "YARN_PRODUCTION":
+    {
+      "value": "false"
+    }
+  }
+}

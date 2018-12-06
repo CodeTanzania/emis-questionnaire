@@ -1,0 +1,11 @@
+{
+  "name": "emis-questionnaire",
+  "title": "EMIS - Questionnaire",
+  "url": "https://emis-questionnaire.herokuapp.com/v1",
+  "sampleUrl": "https://emis-questionnaire.herokuapp.com/v1",
+  "template":
+  {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
