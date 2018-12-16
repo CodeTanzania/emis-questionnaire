@@ -20,21 +20,17 @@
 
 
 /* dependencies */
-const path = require('path');
 const _ = require('lodash');
 const app = require('@lykmapipo/express-common');
-const mongoose = require('mongoose');
-const pkg = require(path.join(__dirname, 'package.json'));
-require('mongoose-schema-jsonschema')(mongoose);
-const Indicator = require(path.join(__dirname, 'lib', 'indicator.model'));
-const Question = require(path.join(__dirname, 'lib', 'question.model'));
-const Questionnaire = require(path.join(__dirname, 'lib', 'questionnaire.model'));
-const indicatorRouter =
-  require(path.join(__dirname, 'lib', 'indicator.http.router'));
-const questionRouter =
-  require(path.join(__dirname, 'lib', 'question.http.router'));
+const { include } = require('@lykmapipo/include');
+const pkg = include(__dirname, 'package.json');
+const Indicator = include(__dirname, 'lib', 'indicator.model');
+const Question = include(__dirname, 'lib', 'question.model');
+const Questionnaire = include(__dirname, 'lib', 'questionnaire.model');
+const indicatorRouter = include(__dirname, 'lib', 'indicator.http.router');
+const questionRouter = include(__dirname, 'lib', 'question.http.router');
 const questionnaireRouter =
-  require(path.join(__dirname, 'lib', 'questionnaire.http.router'));
+  include(__dirname, 'lib', 'questionnaire.http.router');
 
 
 /**

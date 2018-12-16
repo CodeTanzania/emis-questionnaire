@@ -1111,7 +1111,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "indicator",
             "description": "<p>Indicator which a question assess.</p>"
@@ -1304,7 +1304,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "indicator",
             "description": "<p>Indicator which a question assess.</p>"
@@ -1549,7 +1549,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "data.indicator",
             "description": "<p>Indicator which a question assess.</p>"
@@ -1791,7 +1791,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "indicator",
             "description": "<p>Indicator which a question assess.</p>"
@@ -1984,7 +1984,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "indicator",
             "description": "<p>Indicator which a question assess.</p>"
@@ -2177,7 +2177,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Indicator",
             "optional": false,
             "field": "indicator",
             "description": "<p>Indicator which a question assess.</p>"

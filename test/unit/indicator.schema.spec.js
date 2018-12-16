@@ -2,10 +2,10 @@
 
 
 /* dependencies */
-const path = require('path');
 const { expect } = require('chai');
+const { include } = require('@lykmapipo/include');
 const { Schema } = require('mongoose');
-const { Indicator } = require(path.join(__dirname, '..', '..'));
+const { Indicator } = include(__dirname, '..', '..');
 
 
 describe('Indicator Schema', () => {
