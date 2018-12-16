@@ -2,10 +2,10 @@
 
 
 /* dependencies */
-const path = require('path');
 const { expect } = require('chai');
+const { include } = require('@lykmapipo/include');
 const { Schema } = require('mongoose');
-const { Indicator, Question } = require(path.join(__dirname, '..', '..'));
+const { Indicator, Question } = include(__dirname, '..', '..');
 
 
 describe('Question Schema', () => {
