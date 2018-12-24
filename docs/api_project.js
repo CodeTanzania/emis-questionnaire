@@ -1,6 +1,6 @@
 define({
   "name": "emis-questionnaire",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A representation of indicators, questions and questionnaires used to assess need and situation of an emergency(or disaster) event.",
   "title": "EMIS - Questionnaire",
   "url": "https://emis-questionnaire.herokuapp.com/v1",
@@ -13,7 +13,7 @@ define({
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2018-12-16T23:11:11.755Z",
+    "time": "2018-12-24T09:08:44.662Z",
     "url": "http://apidocjs.com",
     "version": "0.17.7"
   }
