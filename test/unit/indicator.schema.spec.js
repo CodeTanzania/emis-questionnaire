@@ -36,10 +36,11 @@ describe('Indicator Schema', () => {
     expect(subject.options.type).to.exist;
     expect(subject.options.trim).to.be.true;
     expect(subject.options.required).to.be.true;
+    expect(subject.options.enum).to.exist;
+    expect(subject.options.enum).to.be.eql(Indicator.SUBJECTS);
     expect(subject.options.index).to.be.true;
     expect(subject.options.searchable).to.be.true;
-    expect(subject.options.fake).to.exist;
-    expect(subject.options.fake).to.be.an('object');
+    expect(subject.options.fake).to.true;
   });
 
   it('should have topic field', () => {
