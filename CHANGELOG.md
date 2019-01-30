@@ -1,3 +1,9 @@
+#### 1.2.1 (2019-01-30)
+
+##### Refactors
+
+* **indicator:**  rename Environment to Sanitation ([1986c561](https://github.com/CodeTanzania/emis-questionnaire/commit/1986c561c4e8540684d9fcbefd4c8208095ee046))
+
 #### 1.2.0 (2019-01-30)
 
 ##### Refactors
