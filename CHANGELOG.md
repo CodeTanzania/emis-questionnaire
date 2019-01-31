@@ -1,3 +1,11 @@
+#### 1.2.3 (2019-01-31)
+
+##### Refactors
+
+* **model:**
+  *  improve question & questionnaire to seed relations ([b9984aea](https://github.com/CodeTanzania/emis-questionnaire/commit/b9984aea2c7baedaf1e9479e3ed5750274845780))
+  *  improve file seeding ([29742500](https://github.com/CodeTanzania/emis-questionnaire/commit/297425003e867dac277b7fae1c9b7d29029de54f))
+
 #### 1.2.2 (2019-01-31)
 
 ##### Refactors
