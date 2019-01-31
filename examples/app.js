@@ -18,12 +18,16 @@ const seedQuestionnaires = (next) => Questionnaire.seed((error) => next(error));
 
 
 // establish mongodb connection
-connect((error) => {
+connect(error => {
+  // re-throw if error
+  if (error) { throw error; }
 
   // seed features
   waterfall([
     seedIndicators, seedQuestions, seedQuestionnaires
   ], (error, results) => {
+    // re-throw if error
+    if (error) { throw error; }
 
     // expose module info
     app.get('/', (request, response) => {
