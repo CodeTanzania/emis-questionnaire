@@ -1,0 +1,21 @@
+[
+{
+  "indicator": "Water supply before the disaster",
+  "assess": "Other",
+  "stage": "Before",
+  "phase": "Recovery",
+  "type": "date",
+  "name": "bus",
+  "label": "Tenetur harum animi pariatur inventore nisi temporibus aut illum.",
+  "help": "Et nesciunt quo sit nobis sit odio et qui dignissimos."
+},
+{
+  "indicator": "Water supply before the disaster",
+  "assess": "Other",
+  "stage": "Before",
+  "phase": "Recovery",
+  "type": "date",
+  "name": "train",
+  "label": "Tenetur harum animi pariatur inventore nisi temporibus aut illum.",
+  "help": "Et nesciunt quo sit nobis sit odio et qui dignissimos."
+}]
