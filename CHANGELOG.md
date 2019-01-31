@@ -1,3 +1,9 @@
+#### 1.2.2 (2019-01-31)
+
+##### Refactors
+
+* **indicator:**  add health & income on subjects ([fbf618dc](https://github.com/CodeTanzania/emis-questionnaire/commit/fbf618dc61eaf9a227fcdec1ade825e69abdfe74))
+
 #### 1.2.1 (2019-01-30)
 
 ##### Refactors

@@ -1,6 +1,6 @@
 {
   "name": "@codetanzania/emis-questionnaire",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A representation of indicators, questions and questionnaires used to assess need and situation of an emergency(or disaster) event.",
   "main": "index.js",
   "scripts": {
