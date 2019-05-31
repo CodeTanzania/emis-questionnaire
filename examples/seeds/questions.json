@@ -1,6 +1,7 @@
 [
 {
-  "indicator": "Water supply before the disaster",
+  "_id": "5cf13be1e10be031ac87bfb9",
+  "indicator": "5cf13be1e10be031ac87bfb9",
   "assess": "Situation",
   "stage": "During",
   "phase": "Response",
@@ -17,7 +18,8 @@
   }]
 },
 {
-  "indicator": "Affectation to Water supply",
+  "_id": "5cf13be1e10be031ac87bfba",
+  "indicator": "5cf13be1e10be031ac87bfba",
   "assess": "Situation",
   "stage": "During",
   "phase": "Response",
@@ -34,7 +36,8 @@
   }]
 },
 {
-  "indicator": "Affectation to Water supply",
+  "_id": "5cf13be1e10be031ac87bfbc",
+  "indicator": "5cf13be1e10be031ac87bfba",
   "assess": "Situation",
   "stage": "During",
   "phase": "Response",
@@ -51,7 +54,8 @@
   }]
 },
 {
-  "indicator": "Water Availability",
+  "_id": "5cf13be1e10be031ac87bfbb",
+  "indicator": "5cf13be1e10be031ac87bfbb",
   "assess": "Situation",
   "stage": "During",
   "phase": "Response",
