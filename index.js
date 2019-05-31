@@ -21,7 +21,7 @@
 
 /* dependencies */
 const _ = require('lodash');
-const app = require('@lykmapipo/express-common');
+const { app, mount } = require('@lykmapipo/express-common');
 const { include } = require('@lykmapipo/include');
 const pkg = include(__dirname, 'package.json');
 const Indicator = include(__dirname, 'lib', 'indicator.model');
@@ -129,7 +129,7 @@ exports.questionnaireRouter = questionnaireRouter;
  * @since 1.0.0
  * @version 0.1.0
  */
-exports.apiVersion = indicatorRouter.apiVersion;
+exports.apiVersion = indicatorRouter.version;
 
 
 /**
@@ -144,9 +144,9 @@ exports.apiVersion = indicatorRouter.apiVersion;
 Object.defineProperty(exports, 'app', {
   get() {
     /* @todo bind oauth middlewares authenticate, token, authorize */
-    app.mount(indicatorRouter);
-    app.mount(questionRouter);
-    app.mount(questionnaireRouter);
+    mount(indicatorRouter);
+    mount(questionRouter);
+    mount(questionnaireRouter);
     return app;
   }
 });
