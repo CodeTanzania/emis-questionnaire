@@ -2,13 +2,13 @@
 
 
 /* dependencies */
-const path = require('path');
 const _ = require('lodash');
 const { waterfall } = require('async');
 const { include } = require('@lykmapipo/include');
-const { connect } = require('@lykmapipo/mongoose-common')
+const { connect } = require('@lykmapipo/mongoose-common');
+const { get, mount, start } = require('@lykmapipo/express-common');
 const { Indicator, Question, Questionnaire } = include(__dirname, '..');
-const { apiVersion, info, app } = include(__dirname, '..');
+const { info, indicatorRouter, questionRouter, questionnaireRouter } = include(__dirname, '..');
 
 
 // seeds
@@ -30,13 +30,16 @@ connect(error => {
     if (error) { throw error; }
 
     // expose module info
-    app.get('/', (request, response) => {
+    get('/', (request, response) => {
       response.status(200);
       response.json(info);
     });
 
+    // mount routers
+    mount(indicatorRouter, questionRouter, questionnaireRouter);
+
     // fire the app
-    app.start((error, env) => {
+    start((error, env) => {
       console.log(`visit http://0.0.0.0:${env.PORT}`);
     });
 

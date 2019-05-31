@@ -29,3 +29,5 @@ node_modules
 startup.sh
 spec/intergration.spec.js
 config
+.idea
+.vscode
