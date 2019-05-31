@@ -1,15 +1,12 @@
 'use strict';
 
-
 /* dependencies */
 const { expect } = require('chai');
 const { include } = require('@lykmapipo/include');
 const { Schema } = require('mongoose');
 const { Question, Questionnaire } = include(__dirname, '..', '..');
 
-
 describe('Questionnaire Schema', () => {
-
   it('should have assess field', () => {
     const assess = Questionnaire.path('assess');
 
@@ -103,7 +100,6 @@ describe('Questionnaire Schema', () => {
   });
 
   it('should have questions field', () => {
-
     const questions = Questionnaire.path('questions');
 
     expect(questions).to.exist;
@@ -117,5 +113,4 @@ describe('Questionnaire Schema', () => {
     expect(questions.options.index).to.be.true;
     expect(questions.options.autopopulate).to.be.exist;
   });
-
 });

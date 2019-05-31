@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * @module Questionnaire
  * @name Questionnaire
@@ -18,7 +17,6 @@
  *
  */
 
-
 /* dependencies */
 const _ = require('lodash');
 const { app, mount } = require('@lykmapipo/express-common');
@@ -29,9 +27,11 @@ const Question = include(__dirname, 'lib', 'question.model');
 const Questionnaire = include(__dirname, 'lib', 'questionnaire.model');
 const indicatorRouter = include(__dirname, 'lib', 'indicator.http.router');
 const questionRouter = include(__dirname, 'lib', 'question.http.router');
-const questionnaireRouter =
-  include(__dirname, 'lib', 'questionnaire.http.router');
-
+const questionnaireRouter = include(
+  __dirname,
+  'lib',
+  'questionnaire.http.router'
+);
 
 /**
  * @name info
@@ -42,11 +42,20 @@ const questionnaireRouter =
  * @since 1.0.0
  * @version 0.1.0
  */
-exports.info = _.merge({}, _.pick(pkg, [
-  'name', 'description', 'version', 'license',
-  'homepage', 'repository', 'bugs', 'sandbox', 'contributors'
-]));
-
+exports.info = _.merge(
+  {},
+  _.pick(pkg, [
+    'name',
+    'description',
+    'version',
+    'license',
+    'homepage',
+    'repository',
+    'bugs',
+    'sandbox',
+    'contributors',
+  ])
+);
 
 /**
  * @name Indicator
@@ -59,7 +68,6 @@ exports.info = _.merge({}, _.pick(pkg, [
  */
 exports.Indicator = Indicator;
 
-
 /**
  * @name Question
  * @description Question model
@@ -70,7 +78,6 @@ exports.Indicator = Indicator;
  * @version 0.1.0
  */
 exports.Question = Question;
-
 
 /**
  * @name Questionnaire
@@ -83,7 +90,6 @@ exports.Question = Question;
  */
 exports.Questionnaire = Questionnaire;
 
-
 /**
  * @name indicatorRouter
  * @description indicator http router
@@ -94,7 +100,6 @@ exports.Questionnaire = Questionnaire;
  * @version 0.1.0
  */
 exports.indicatorRouter = indicatorRouter;
-
 
 /**
  * @name questionRouter
@@ -107,7 +112,6 @@ exports.indicatorRouter = indicatorRouter;
  */
 exports.questionRouter = questionRouter;
 
-
 /**
  * @name questionnaireRouter
  * @description questionnaire http router
@@ -119,7 +123,6 @@ exports.questionRouter = questionRouter;
  */
 exports.questionnaireRouter = questionnaireRouter;
 
-
 /**
  * @name apiVersion
  * @description http router api version
@@ -130,7 +133,6 @@ exports.questionnaireRouter = questionnaireRouter;
  * @version 0.1.0
  */
 exports.apiVersion = indicatorRouter.version;
-
 
 /**
  * @name app
@@ -148,5 +150,5 @@ Object.defineProperty(exports, 'app', {
     mount(questionRouter);
     mount(questionnaireRouter);
     return app;
-  }
+  },
 });

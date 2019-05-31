@@ -1,15 +1,12 @@
 'use strict';
 
-
 /* dependencies */
 const { expect } = require('chai');
 const { include } = require('@lykmapipo/include');
 const { Schema } = require('mongoose');
 const { Indicator } = include(__dirname, '..', '..');
 
-
 describe('Indicator Schema', () => {
-
   it('should have base field', () => {
     const base = Indicator.path('base');
 
@@ -101,5 +98,4 @@ describe('Indicator Schema', () => {
     expect(icon.options.trim).to.be.true;
     expect(icon.options.fake).to.not.exist;
   });
-
 });
